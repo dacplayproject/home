@@ -1,0 +1,76 @@
+@import "../../style/index";
+
+.navLink {
+  color: $text-main;
+  font-weight: bold;
+}
+
+.navFooter {
+  background: $bg-main;
+  position: relative;
+  color: $text-fff;
+  padding: 48px 0 24px 0;
+}
+
+.contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+  img {
+    width: 42px;
+    height: 30px;
+
+  }
+  p {
+    margin-bottom: 0;
+    margin-left: 20px;
+    font-size: 16px;
+    a{
+      color: $text-fff;
+      text-decoration: underline;
+    }
+  }
+
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+.mdContent {
+  img {
+
+  }
+}
+
+
+.xsContent {
+  display: none;
+
+
+  img {
+
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mdContent {
+    display: none;
+  }
+
+  .xsContent {
+    display: block;
+  }
+
+  .navFooter {
+  }
+}
+
+
+
+

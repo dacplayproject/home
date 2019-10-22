@@ -1,0 +1,84 @@
+@import "../../style/index";
+
+.title {
+  margin-top: 90px;
+  margin-bottom: 85px;
+  img {
+    width: 306px;
+  }
+
+  h1 {
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 55px;
+    letter-spacing: 3px;
+    margin-top: 45px;
+  }
+}
+
+.section {
+  margin-bottom: 70px;
+
+  img {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .title {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    text-align: center;
+    img {
+      width: 60%;
+    }
+
+    h1 {
+      font-size:26px;
+      font-weight:400;
+      line-height:31px;
+      letter-spacing:1px;
+      margin-top: 45px;
+    }
+  }
+
+  .section {
+    margin-bottom: 70px;
+    img {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+      margin-top: 18px;
+      color: #4A4A4A;
+    }
+  }
+}
+
+@media (min-width: 576px) and(max-width: 768px) {
+
+}
