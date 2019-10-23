@@ -19,7 +19,7 @@ class PageFooter extends Component {
                                 <img src={mail}/>
                                 <p>
                                     Want to keep up with this fast-evolving community?
-                                    Please drop us a line at <a href='mailto:contact@dacplay.org'>info@dacplay.org</a>
+                                    Please drop us a line at <a href='mailto:contact@dacplay.org'>contact@dacplay.org</a>
                                 </p>
                             </Col>
                         </Row>
