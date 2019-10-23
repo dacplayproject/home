@@ -1,11 +1,15 @@
 import path from 'path';
 import fetch from 'node-fetch';
 import { writeFile, makeDir } from './lib/fs';
+const subDomain = '';
 
-const routes = [
-    '/token',
-    '/404'
-];
+const routerPath = {
+    HOME: `${subDomain}/`,
+    TOKEN: `${subDomain}/token`,
+    '404': `${subDomain}/404`
+}
+
+const routes = Object.values(routerPath);
 
 async function render() {
     const server = {

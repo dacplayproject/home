@@ -7,21 +7,28 @@ const AsyncToken = asyncComponent(import("./page/Token"));
 const AsyncNotFound = asyncComponent(import("./page/NotFound"));
 
 const history = createBrowserHistory();
+const subDomain = '';
 
+export const routerPath = {
+    HOME: `${subDomain}/`,
+    TOKEN: `${subDomain}/token`,
+    '404': `${subDomain}/404`
+}
 
-export default () =>
+export default () => (
     <Router history={history}>
         <Switch>
             <Route
                 exact
                 component={AsyncHome}
-                path='/'
+                path={routerPath.HOME}
             />
             <Route
                 exact
                 component={AsyncToken}
-                path='/token'
+                path={routerPath.TOKEN}
             />
             <Route component={AsyncNotFound}/>
         </Switch>
     </Router>
+)
